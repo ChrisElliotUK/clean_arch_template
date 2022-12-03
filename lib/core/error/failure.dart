@@ -16,3 +16,19 @@ class RevenueCatFailure extends Failure {
   @override
   List<Object?> get props => [errorMessage, stackTrace];
 }
+
+class CacheFailure extends Failure {
+  const CacheFailure({dynamic errorMessage, StackTrace? stackTrace})
+      : super(errorMessage: errorMessage, stackTrace: stackTrace);
+
+  @override
+  List<Object?> get props => [errorMessage, stackTrace];
+}
+
+class ApiFailure extends Failure {
+  const ApiFailure({dynamic errorMessage, StackTrace? stackTrace})
+      : super(errorMessage: errorMessage, stackTrace: stackTrace);
+
+  @override
+  List<Object?> get props => [errorMessage, stackTrace];
+}
