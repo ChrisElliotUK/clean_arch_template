@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../di/injection_container.dart' as di;
-
 class RevenuecatScreen extends StatelessWidget {
   const RevenuecatScreen({Key? key}) : super(key: key);
   static String id = '/Revenuecat';
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [],
+      providers: const [],
       child: const _RevenuecatScreenBody(),
     );
   }

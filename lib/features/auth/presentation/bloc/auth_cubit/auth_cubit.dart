@@ -1,5 +1,5 @@
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/usecase/usecase.dart';
 import '../../../data/repositories/auth_repository_impl.dart';
@@ -111,4 +111,6 @@ class AuthCubit extends Cubit<AuthState> {
       (success) => emit(state.copyWith(isLoading: false, status: AuthStatus.UNAUTHENTICATED)),
     );
   }
+
+  Future<void> setUser(UserProfile user) async => emit(state.copyWith(user: user));
 }
