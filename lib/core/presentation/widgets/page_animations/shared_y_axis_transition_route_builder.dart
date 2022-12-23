@@ -1,6 +1,10 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 
+/// A [PageRouteBuilder] that transitions to a new page using a [SharedAxisTransition]
+/// with the [SharedAxisTransitionType.vertical] (y-axis) type.
+///
+/// You can use it as a replacement for [MaterialPageRoute] to get a shared axis transition.
 class SharedYAxisTransitionRouteBuilder<T> extends PageRouteBuilder<T> {
   /// The page to be transitioned to.
   final Widget page;
