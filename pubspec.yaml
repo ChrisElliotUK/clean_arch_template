@@ -37,6 +37,8 @@ dependencies:
   # ------------------------------------------------------------
   # responsive design
   flutter_screenutil: ^5.5.4
+  # animations
+  animations: ^2.0.7
 
   # ------------------------------------------------------------
   # Core Functionality
