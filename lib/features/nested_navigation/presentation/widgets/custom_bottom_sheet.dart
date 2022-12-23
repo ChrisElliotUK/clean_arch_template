@@ -14,7 +14,7 @@ class CustomBottomSheet extends StatelessWidget {
           // We use viewInsets to calculate the height of the keyboard. You don't need
           // this if you don't have a text field in your bottom sheet.
           bottom: MediaQuery.of(context).viewInsets.bottom > 0
-              ? MediaQuery.of(context).viewInsets.bottom + 45
+              ? MediaQuery.of(context).viewInsets.bottom + 45.h
               : MediaQuery.of(context).viewInsets.bottom),
       child: child,
     );
